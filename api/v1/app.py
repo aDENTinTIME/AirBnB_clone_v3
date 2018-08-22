@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''
+    app
+'''
 
 
 from flask import Flask
@@ -10,8 +13,12 @@ from models import storage
 app = Flask(__name__)
 app.register_blueprint(app_views)
 
+
 @app.teardown_appcontext
 def teardown(self):
+    '''
+        Tears-down app
+    '''
     storage.close()
 
 if __name__ == "__main__":
