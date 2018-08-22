@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+'''
+    index
+'''
 
 from api.v1.views import app_views
 from flask import jsonify
@@ -18,7 +20,7 @@ def status():
 @app_views.route('/stats')
 def stats():
     '''
-        Returns status in json format
+        Returns stats in json format
     '''
     dic = {}
     for x in models.classes:
