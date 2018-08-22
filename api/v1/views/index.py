@@ -23,7 +23,7 @@ def stats():
         Returns stats in json format
     '''
     dic = {'amenities': storage.count('Amenity'),
-           'cities': storage.count('Citie'),
+           'cities': storage.count('City'),
            'places': storage.count('Place'),
            'reviews': storage.count('Review'),
            'states': storage.count('State'),
