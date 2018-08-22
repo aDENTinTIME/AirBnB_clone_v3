@@ -24,6 +24,6 @@ def teardown(self):
     storage.close()
 
 if __name__ == "__main__":
-    hosti = getenv("HBNB_API_HOST", "0.0.0.0")
-    porti = getenv("HBNB_API_PORT", 5000)
+    hosti = getenv("HBNB_API_HOST", default="0.0.0.0")
+    porti = getenv("HBNB_API_PORT", default=5000)
     app.run(host=hosti, port=porti, threaded=True)
