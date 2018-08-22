@@ -22,7 +22,10 @@ def stats():
     '''
         Returns stats in json format
     '''
-    dic = {}
-    for x in models.classes:
-        dic[x.lower()+'s'] = storage.count(x)
+    dic = {'amenities': storage.count('Amenity'),
+            'cities': storage.count('Citie'),
+            'places': storage.count('Place'),
+            'reviews': storage.count('Review'),
+            'states': storage.count('State'),
+            'users': storage.count('User')}
     return jsonify(dic)
