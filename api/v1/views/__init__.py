@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+'''
+    views
+'''
 
 from flask import Blueprint
 
