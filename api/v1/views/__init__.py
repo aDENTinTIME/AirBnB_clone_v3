@@ -14,5 +14,5 @@ if app_views:
     from api.v1.views.cities import *  # noqa
     from api.v1.views.amenities import *  # noqa
     from api.v1.views.users import *  # noqa
-    #from api.v1.views.places import *  # noqa
+    from api.v1.views.places import *  # noqa
     #from api.v1.views.reviews import *  # noqa
