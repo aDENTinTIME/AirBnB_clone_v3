@@ -1,17 +1,16 @@
 #!/usr/bin/python3
 """
-    Handles RESTful API actions for amenities objects
+    Handles RESTful API actions for amenities
 """
 
-
+from models import BaseModel
+from models import storage
 from api.v1.views import app_views
 from flask import jsonify
 from flask import make_response
 from flask import abort
 from flask import request
 from models import Amenity
-from models import Basemodel
-from models import storage
 
 
 @app_views.route("/amenities")
